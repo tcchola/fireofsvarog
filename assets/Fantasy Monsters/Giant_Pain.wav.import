@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c4t5sscprx3ya"
+path="res://.godot/imported/Giant_Pain.wav-d2d0a4870b60efe5474c401af9f2481a.sample"
+
+[deps]
+
+source_file="res://assets/Fantasy Monsters/Giant_Pain.wav"
+dest_files=["res://.godot/imported/Giant_Pain.wav-d2d0a4870b60efe5474c401af9f2481a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

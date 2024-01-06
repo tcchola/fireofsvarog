@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cqsntvfy6peyk"
+path="res://.godot/imported/SerpentBeast_Hiss.wav-b79b63c7a4b87248f606f7494ff90fda.sample"
+
+[deps]
+
+source_file="res://assets/Fantasy Monsters/SerpentBeast_Hiss.wav"
+dest_files=["res://.godot/imported/SerpentBeast_Hiss.wav-b79b63c7a4b87248f606f7494ff90fda.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cl8wtj4lldjsy"
+path="res://.godot/imported/Warg_Growl.wav-a2a9009a1ed10e1b515b9247832ece8a.sample"
+
+[deps]
+
+source_file="res://assets/Fantasy Monsters/Warg_Growl.wav"
+dest_files=["res://.godot/imported/Warg_Growl.wav-a2a9009a1ed10e1b515b9247832ece8a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

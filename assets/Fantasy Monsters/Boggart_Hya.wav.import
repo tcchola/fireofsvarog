@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b3411nx7r5rry"
+path="res://.godot/imported/Boggart_Hya.wav-471cbc2efd2211154c8a21d5dfc01818.sample"
+
+[deps]
+
+source_file="res://assets/Fantasy Monsters/Boggart_Hya.wav"
+dest_files=["res://.godot/imported/Boggart_Hya.wav-471cbc2efd2211154c8a21d5dfc01818.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

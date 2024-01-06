@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://caipmgfriordl"
+path="res://.godot/imported/Warg_Talk2.wav-5f3bf5c3158351795be2d0eab21f0d5e.sample"
+
+[deps]
+
+source_file="res://assets/Fantasy Monsters/Warg_Talk2.wav"
+dest_files=["res://.godot/imported/Warg_Talk2.wav-5f3bf5c3158351795be2d0eab21f0d5e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7ggyr7kkgoyd"
+path="res://.godot/imported/Fae_Sigh.mp3-e73d8aad8f462d26264937247518fe83.mp3str"
+
+[deps]
+
+source_file="res://assets/Fantasy Monsters/Fae_Sigh.mp3"
+dest_files=["res://.godot/imported/Fae_Sigh.mp3-e73d8aad8f462d26264937247518fe83.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
