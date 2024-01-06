@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://bl5636sdx2e2o"]
+
+[ext_resource type="Script" path="res://scripts/credits.gd" id="1_2fw1i"]
+[ext_resource type="VideoStream" path="res://cutscenes/backgrounds/dark_forest.ogv" id="2_qm3ar"]
+[ext_resource type="FontFile" uid="uid://caargumkthaoy" path="res://assets/fonts/Norse.otf" id="3_nc0i2"]
+[ext_resource type="AudioStream" uid="uid://bvoqrafa1grat" path="res://cutscenes/music/2021-05-27_-_Orthodox_Chant_-_www.FesliyanStudios.com.mp3" id="4_0qmyr"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2fw1i")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_direction = 1
+layout_mode = 2
+offset_left = -480.0
+offset_top = -205.0
+offset_right = 1440.0
+offset_bottom = 883.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_qm3ar")
+autoplay = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -42.0
+offset_right = 54.0
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+tooltip_text = "Go back to main menu"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_nc0i2")
+theme_override_font_sizes/font_size = 30
+text = "Back"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_0qmyr")
+volume_db = -20.0
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

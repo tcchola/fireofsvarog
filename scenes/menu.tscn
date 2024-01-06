@@ -1,0 +1,105 @@
+[gd_scene load_steps=6 format=3 uid="uid://nlv3d4nekwuf"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_5wm84"]
+[ext_resource type="FontFile" uid="uid://caargumkthaoy" path="res://assets/fonts/Norse.otf" id="1_dmc3u"]
+[ext_resource type="AudioStream" uid="uid://bvoqrafa1grat" path="res://cutscenes/music/2021-05-27_-_Orthodox_Chant_-_www.FesliyanStudios.com.mp3" id="2_8o2tf"]
+[ext_resource type="VideoStream" path="res://cutscenes/backgrounds/embers.ogv" id="2_dghaa"]
+[ext_resource type="FontFile" uid="uid://2t8xhj4y1v3r" path="res://assets/fonts/Gla_rough.TTF" id="3_hb3g5"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5wm84")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_dghaa")
+autoplay = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -191.0
+offset_top = 113.0
+offset_right = 191.0
+offset_bottom = 243.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="Subtitle" type="Label" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.913725, 0.913725, 0.913725, 1)
+theme_override_fonts/font = ExtResource("3_hb3g5")
+theme_override_font_sizes/font_size = 30
+text = "Svarogova vatra"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.913725, 0.913725, 0.913725, 1)
+theme_override_fonts/font = ExtResource("1_dmc3u")
+theme_override_font_sizes/font_size = 120
+text = "Fire of Svarog"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -133.5
+offset_top = 87.5
+offset_right = 133.5
+offset_bottom = 284.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Begin" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Start a new game"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_dmc3u")
+theme_override_font_sizes/font_size = 40
+text = "Begin"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Exit the game"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_dmc3u")
+theme_override_font_sizes/font_size = 40
+text = "Quit"
+
+[node name="Credits" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Info on development"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_dmc3u")
+theme_override_font_sizes/font_size = 40
+text = "Credits"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_8o2tf")
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Begin" to="." method="_on_begin_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
