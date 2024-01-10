@@ -30,15 +30,16 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -191.0
+offset_left = -287.5
 offset_top = 113.0
-offset_right = 191.0
-offset_bottom = 243.0
+offset_right = 287.5
+offset_bottom = 287.0
 grow_horizontal = 2
 alignment = 1
 
-[node name="Subtitle" type="Label" parent="VBoxContainer2"]
+[node name="GlagoliticTitle" type="Label" parent="VBoxContainer2"]
 layout_mode = 2
+tooltip_text = "\"Svarogova vatra\""
 theme_override_colors/font_color = Color(0.913725, 0.913725, 0.913725, 1)
 theme_override_fonts/font = ExtResource("3_hb3g5")
 theme_override_font_sizes/font_size = 30
@@ -98,8 +99,27 @@ text = "Credits"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_8o2tf")
-autoplay = true
+
+[node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -179.0
+offset_top = -76.0
+offset_right = -41.0
+offset_bottom = -45.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_dmc3u")
+theme_override_font_sizes/font_size = 20
+text = "Mute Music"
 
 [connection signal="pressed" from="VBoxContainer/Begin" to="." method="_on_begin_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]

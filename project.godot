@@ -20,6 +20,7 @@ window/size/viewport_width=1440
 window/size/viewport_height=810
 window/size/mode=3
 window/stretch/mode="canvas_items"
+mouse_cursor/custom_image="res://assets/UI/01.png"
 
 [rendering]
 
